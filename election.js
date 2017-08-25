@@ -49,6 +49,9 @@ $.ajax({
             dataType: 'json'
           }).done(function(data) {
 
+
+            // EASY WAY =  window.location.reload();
+            //HARD WAY = below 
             ul = document.querySelector('#candidates');
             ul.innerHTML = '';
 
@@ -85,6 +88,7 @@ $.ajax({
                     li.append(form);
                     candidates.append(li);
 
+
               });
 
             }).fail(function() {
@@ -92,7 +96,7 @@ $.ajax({
 
             });
 
-            // window.location.reload();
+
 
 
           })
